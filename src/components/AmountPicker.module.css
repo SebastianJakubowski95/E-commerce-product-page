@@ -1,0 +1,52 @@
+.main {
+  background-color: #f7f8fd;
+  border-radius: 0.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main img {
+  height: fit-content;
+}
+.main button {
+  background: transparent;
+  width: 2.5rem;
+  height: 3.125rem;
+  display: grid;
+  place-items: center;
+}
+.main p {
+  font-weight: var(--bold);
+  color: var(--black) !important;
+}
+
+.small {
+  width: 10rem;
+}
+.large {
+  width: 17.8125rem;
+}
+
+.left-icon {
+  border-radius: 20% 0% 0% 20%;
+}
+.right-icon {
+  border-radius: 0% 20% 20% 0%;
+}
+
+@media (hover: hover) {
+  .main button:hover {
+    opacity: 0.75;
+  }
+}
+.main button:active {
+  opacity: 0.75;
+  background-color: #68707d10;
+}
+
+@media (max-width: 768px) {
+  .full-width {
+    width: 100%;
+  }
+}

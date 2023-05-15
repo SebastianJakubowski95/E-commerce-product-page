@@ -1,0 +1,50 @@
+.btn {
+  position: relative;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  padding: 0;
+}
+.s1 {
+  border-radius: 1rem;
+  width: 34.6875rem;
+  height: 34.6875rem;
+  background-color: transparent;
+}
+.s2 {
+  border-radius: 1rem;
+  width: 27.75rem;
+  height: 27.75rem;
+  background-color: transparent;
+}
+.s3 {
+  border-radius: 0.75rem;
+  width: 5.4375rem;
+  height: 5.4375rem;
+  background-color: transparent;
+}
+.s4 {
+  border-radius: 0.5rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: transparent;
+}
+
+.active {
+  background-color: #ffffff75;
+  border: 2px solid var(--orange);
+  border-radius: 0.75rem;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 5.2rem;
+  height: 5.2rem;
+}
+.onHover {
+  background-color: #ffffff50;
+  border-radius: 0.75rem;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 5.4375rem;
+  height: 5.4375rem;
+}

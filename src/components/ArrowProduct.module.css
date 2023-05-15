@@ -1,0 +1,29 @@
+.main {
+  width: 3.4375rem;
+  height: 3.4375rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: scale 150ms ease;
+}
+@media (hover: hover) {
+  .main:hover img {
+    filter: invert(64%) sepia(59%) saturate(4370%) hue-rotate(348deg)
+      brightness(104%) contrast(101%);
+  }
+}
+.main:active img {
+  filter: invert(64%) sepia(59%) saturate(4370%) hue-rotate(348deg)
+    brightness(104%) contrast(101%);
+}
+.main:active {
+  scale: 0.8;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

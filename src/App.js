@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import classes from "./App.module.css";
+import NavigationLarge from "./components/UI/NavigationLarge";
+import NavigationSmall from "./components/UI/NavigationSmall";
+import Description from "./components/UI/Description";
+import ImagesHeroSection from "./components/UI/ImagesHeroSection";
+// size:s1, s2, s3, s4; img:(src); isSelected;
 function App() {
+  let w = window.innerWidth;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {w >= 768 ? <NavigationLarge /> : <NavigationSmall />}
+      <div className={classes["product-section"]}>
+        <div>
+          <ImagesHeroSection />
+        </div>
+        <div>
+          <Description />
+        </div>
+      </div>
+    </>
   );
 }
 

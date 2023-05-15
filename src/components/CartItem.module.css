@@ -1,0 +1,24 @@
+.item {
+  display: flex;
+  width: 99%;
+  justify-content: space-between;
+  align-items: center;
+}
+.item button {
+  background-color: transparent;
+}
+
+.data-info > div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.data-info p {
+  font-size: 0.875rem;
+  color: var(--grey);
+}
+.data-info p.sum {
+  font-weight: 700;
+  color: var(--black);
+}

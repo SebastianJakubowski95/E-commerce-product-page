@@ -1,0 +1,30 @@
+.product-section {
+  display: flex;
+  gap: 1rem;
+  width: 90%;
+  max-width: 75rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+@media (max-width: 1000px) {
+  .product-section {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .product-section {
+    margin: 3rem 0;
+    width: 100%;
+    margin: 0 !important;
+  }
+  .product-section > div:nth-child(1) {
+    position: relative;
+    width: 100%;
+  }
+  .product-section > div:nth-child(2) {
+    position: relative;
+    width: 94%;
+  }
+}
